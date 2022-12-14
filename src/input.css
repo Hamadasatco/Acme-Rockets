@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-icon-bar1, .menu-icon-bar2, .menu-icon-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .menu-icon-bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .menu-icon-bar2 {opacity: 0;}
+  
+  .change .menu-icon-bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
